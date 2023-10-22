@@ -1,10 +1,77 @@
 .Members {
-  .content {
+
+  .Box{
+    display: flex;
+    justify-content: space-between;
+    .content {
+      width: 70%;
+      height: 40vh;
+      border-top: 3px solid #000;
+      padding: 10px;
+    }
+  
+    .imgBox{
+      width: 305px;
+      height: 40vh;
+      margin-left: 10px;
+      background: #ddd;
+      border-left: 1px solid #000;
+      border-bottom: 3px solid #000;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .signBox {
+    width: 100%;
+    height: 30vh;
+    background: #000;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    h2{
+      color: #fff;
+      position: absolute; /* h2를 절대 위치로 설정 */
+      top: 30%; /* 부모 요소의 가운데 정렬을 위해 상단을 50%로 설정 */
+      left: 50%; /* 부모 요소의 가운데 정렬을 위해 왼쪽을 50%로 설정 */
+      transform: translate(-50%, -50%); /* h2를 수평 및 수직으로 정확하게 가운데 정렬 */
+      z-index: 1; /* h2를 이미지 위로 겹치게 함 */
+
+    }
+    span{
+      color: #fff;
+      position: absolute; /* h2를 절대 위치로 설정 */
+      text-align: center;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%, -50%); /* h2를 수평 및 수직으로 정확하게 가운데 정렬 */
+      z-index: 1; /* h2를 이미지 위로 겹치게 함 */
+    }
+  }
+  
+  .join{
+    display: flex;
+    justify-content: space-between;
+
     table {
+      text-align: center;
       width: 50%;
       border: none;
-      border-top: 2px solid #333;
-      border-bottom: 2px solid #333;
+      margin-top: 100px;
 
       th {
         width: 10%;
@@ -17,7 +84,7 @@
           text-align: center;
           input[type="submit"],
           input[type="reset"] {
-            border: 1px solid #aaa;
+            border: none;
             width: 150px;
             height: 30px;
             display: inline-flex;
@@ -28,7 +95,6 @@
           }
         }
       }
-
       td {
         border: none;
         border-bottom: 1px solid #bbb;
@@ -42,7 +108,7 @@
           width: 100%;
           border: 1px solid #aaa;
           padding: 6px 10px;
-          background: #f3ffff;
+          background: #ffffff;
           resize: none;
         }
 
@@ -54,13 +120,58 @@
 
         p {
           font: 0.8rem/1.2 "돋움";
-          color: hotpink;
+          color: rgb(141, 141, 141);
           margin-top: 5px;
         }
       }
     }
+    .side {
+      width: 40%;
+      height: 100vh;
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* 수평 가운데 정렬 */
+      align-items: center; /* 수직 가운데 정렬 */
+    
+      .txtBox {
+        width: 80%;
+        height: 30vh;
+        padding: 8px 10px;
+        text-align: center;
+        border-right: 1px solid #000;
+        border-bottom: 4px solid #000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.6s;
+
+        h2, span{
+          align-items: center;
+        }
+
+        &:hover{
+          box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.05);
+        }
+      }
+
+      .img{
+        width: 80%;
+        height: 60vh;
+        background: #000;
+
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    
   }
 }
+
+
 
 //tablet mediaquery
 .tablet,

@@ -149,10 +149,28 @@ function Members() {
 	return (
 		<Layout title={'Members'}>
 			<form onSubmit={handleSubmit}>
+				<div className="Box">
 				<div className="content">
+					<h2>Join the members</h2>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dicta a, autem, minus voluptas inventore saepe maiores mollitia reiciendis, deleniti pariatur dignissimos modi! Odit, numquam quam illo sequi earum tenetur.
+						<br />
+						<br />
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eos quis facilis temporibus maiores hic corrupti tempora quaerat necessitatibus, impedit earum minima fuga fugiat mollitia error, illum esse id velit? Error deleniti dolore quae rerum adipisci similique doloremque accusamus veritatis.
+					</span>
+				</div>
+				<div className="imgBox">
+				<img src="img/background9.jpg" alt="1" />
+				</div>
+				</div>
+				
+				<div className="signBox">
+					<img src="img/background8.jpg" alt="1" />
+					<h2>Sign in</h2>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum itaque illum esse reprehenderit, tenetur at, voluptates magni maxime autem modi necessitatibus nihil accusantium deleniti. Repellendus quia inventore esse. Sequi </span>
+				</div>
 				<fieldset>
+					<div className="join">
 					<legend className='h'>회원가입 폼 양식</legend>
-					<div className="imgBox"></div>
 					
 					<table border='1'>
 						<tbody>
@@ -337,8 +355,18 @@ function Members() {
 							</tr>
 						</tbody>
 					</table>
+
+					<div className="side">
+						<div className="txtBox">
+							<h3>Lorem, ipsum.</h3>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloribus nihil ratione aspernatur saepe, distinctio deserunt unde repudiandae facilis corrupti?</span>
+						</div>
+						<div className="img">
+							<img src="img/background7.jpg" alt="1" />
+						</div>
+					</div>
+					</div>
 				</fieldset>
-				</div>
 			</form>
 		</Layout>
 	);

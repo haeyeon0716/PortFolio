@@ -100,6 +100,7 @@ export default function Gallery() {
 			<div className="mainbox">
 				<article>
                     <div class="pic">
+					<img src="img/background3.jpg" alt="1" />
 					</div>
                     <div class="txtbox">
                         <h2>Lorem ipsum</h2>
@@ -108,6 +109,7 @@ export default function Gallery() {
                 </article>
 				<article>
                     <div class="pic">
+					<img src="img/background6.jpg" alt="1" />
 					</div>
                     <div class="txtbox">
                         <h2>Lorem ipsum</h2>
@@ -116,6 +118,7 @@ export default function Gallery() {
                 </article>
 				<article>
                     <div class="pic">
+					<img src="img/background7.jpg" alt="1" />
 					</div>
                     <div class="txtbox">
                         <h2>Lorem ipsum</h2>

@@ -134,6 +134,7 @@ export default function Community() {
 				</nav>
 			</div>
 			<div className="imgBox">
+				<img src="img/background3.jpg" alt="1" />
 				<h2>Lorem, ipsum.</h2>
 			</div>
 			</div>

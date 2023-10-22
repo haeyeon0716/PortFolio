@@ -58,13 +58,24 @@
 			background: #000;
 			margin-top: 50px;
 			text-align: center;
-			align-items: center; /* 세로 가운데 정렬 */
+			position: relative; /* 부모 요소를 상대적으로 설정 */
+		  
+			img {
+			  width: 100%;
+			  height: 100%;
+			  object-fit: cover;
+			}
 		  
 			h2 {
 			  color: #fff;
-			  margin: 0 auto; /* h2 요소의 기본 마진을 제거하여 정확한 가운데 정렬을 보장 */
+			  position: absolute; /* h2를 절대 위치로 설정 */
+			  top: 50%; /* 부모 요소의 가운데 정렬을 위해 상단을 50%로 설정 */
+			  left: 50%; /* 부모 요소의 가운데 정렬을 위해 왼쪽을 50%로 설정 */
+			  transform: translate(-50%, -50%); /* h2를 수평 및 수직으로 정확하게 가운데 정렬 */
+			  z-index: 1; /* h2를 이미지 위로 겹치게 함 */
 			}
 		  }
+		  
 
 	}
 
@@ -96,9 +107,14 @@
 			float: left;
 			border-top: 2px solid #000;
 			border-right: 4px solid #000;
+			transition: 0.6s;
 
 			&:nth-of-type(even) {
 				margin-right: 0px;
+			}
+
+			&:hover{
+				box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.05);
 			}
 
 			.txt {

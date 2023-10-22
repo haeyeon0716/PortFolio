@@ -164,15 +164,25 @@
 		}
 
 		ul {
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 40px;
 			display: flex;
 			gap: 20px;
+			justify-content: space-around;
 
 			li {
+				width: 30%;
 				cursor: pointer;
+				align-items: center;
+				font: 1rem/40px 'arial';
+				color: #000000;
+				text-align: center;
 			}
 
 			li.on {
-				color: hotpink;
+				background: #000;
+				color: rgb(255, 255, 255);
 			}
 		}
 	}

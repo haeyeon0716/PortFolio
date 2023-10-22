@@ -38,6 +38,11 @@ function News() {
 	return (
 		<section className='news myScroll'>
 			<h2>News</h2>
+			<div className="txtBox">
+				<h2>Lorem, ipsum.</h2>
+				<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi cum veniam voluptatibus ipsum. Excepturi voluptatibus reiciendis, nobis a dolor et.</span>
+			</div>
+			
 			<div className='postWrap'>
 				{Post.map((el, idx) => {
 					if (idx >= 4) return null;
@@ -50,6 +55,17 @@ function News() {
 						);
 				})}
 			</div>
+			<hr />
+			<div className="totalBox">
+				<div className="imgBox">
+					<img src="img/background2.jpg" alt="1" />
+				</div>
+				<div className="txt">
+					<h2>News</h2>
+					<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore doloremque nobis quos laboriosam laborum, corrupti consectetur incidunt debitis eveniet perspiciatis necessitatibus, enim animi aspernatur perferendis, iusto ut! Nostrum, impedit et?</span>
+				</div>
+			</div>
+			
 		</section>
 	);
 }

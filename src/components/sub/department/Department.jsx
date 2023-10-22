@@ -36,7 +36,9 @@ export default function Department() {
 			<h2>Info</h2>
 			<hr />
 			<div className="upper">
-			<div className="imgBox"></div>
+			<div className="imgBox">
+			<img src="img/background3.jpg" alt="1" />
+			</div>
 			<div id='etc'>
 					<h2>Information</h2>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, id
@@ -49,7 +51,9 @@ export default function Department() {
 				</div>
 			</div>
 			<div className="upper">
-			<div className="imgBox"></div>
+			<div className="imgBox">
+			<img src="img/background1.jpg" alt="1" />
+			</div>
 			<div id='etc'>
 					<h2>Organization</h2>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, id
