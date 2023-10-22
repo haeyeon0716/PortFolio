@@ -187,6 +187,25 @@ export default function Contact() {
 				</div>
 			</div>
 
+			<div className="imgtxt">
+				<div className="imgBox">
+				<img src="img/photo1.jpg" alt="1" />
+				</div>
+				<div className="txtBox">
+					<h2>Contact us</h2>
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias excepturi commodi corrupti nihil veritatis officia incidunt ducimus, ex libero placeat.
+						<br />
+						<br />
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus eligendi delectus distinctio quaerat similique enim ex eaque nisi maxime? Molestias sequi odio quisquam laudantium, a aperiam eos nam similique.
+						<br />
+						<br />
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis minima tempore reprehenderit aut recusandae sunt quis harum illum, repudiandae enim expedita dolor nobis voluptate natus illo accusamus cumque! Consequatur doloribus qui tempore quis beatae, in esse deserunt
+					</span>
+
+					<button>View More</button>
+				</div>
+			</div>
+
 			<div id='mapBox'>
 				<div className='btnSet'>
 					<button onClick={() => setTraffic(!Traffic)}>

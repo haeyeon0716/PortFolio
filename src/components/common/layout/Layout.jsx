@@ -23,7 +23,9 @@ export default function Layout({ title, children }) {
 			<h1 ref={refTitle}>{title}</h1>
 			<div className='bar'></div>
 
-			<figure></figure>
+			<figure>
+				 <h2>Welcome, My Portfolio site</h2>
+			</figure>
 
 			{children}
 		</section>

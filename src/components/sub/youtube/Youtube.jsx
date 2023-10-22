@@ -18,8 +18,9 @@ export default function Youtube() {
 
 						return (
 							<article key={idx}>
+								<div className="txtBox">
 								<div className='titBox'>
-									<h2>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h2>
+									<h2>{tit.length > 20 ? tit.substr(0, 20) + '...' : tit}</h2>
 								</div>
 
 								<div className='conBox'>
@@ -27,6 +28,7 @@ export default function Youtube() {
 										{desc.length > 180 ? desc.substr(0, 100) + '...' : desc}
 									</p>
 									<span>{date.split('T')[0].split('-').join('.')}</span>
+								</div>
 								</div>
 
 								<div className='picBox'>

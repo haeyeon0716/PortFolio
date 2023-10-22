@@ -30,10 +30,34 @@
 	figure {
 		width: 0%;
 		height: 160px;
-		background: #555;
+		border: 1px solid #000;
+		border-left: 10px solid #000;
 		margin-bottom: 60px;
 		transition: width 1s 0.3s;
-	}
+		box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.05);
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center; /* 세로 가운데 정렬을 위해 사용 */
+	  
+		h2 {
+		  font-size: 3rem;
+		  opacity: 0; /* 초기에 숨김 */
+		  margin: 0 auto;
+		  transition: opacity 1s; /* opacity 속성에 애니메이션을 추가 */
+		  text-align: center; /* 가로 가운데 정렬 */
+		}
+	  
+		&:hover {
+		  width: 100%; /* 마우스를 호버할 때 width를 100%로 확대 */
+	  
+		  h2 {
+			opacity: 1; /* 마우스를 호버할 때 h2를 서서히 나타나게 함 */
+		  }
+		}
+	  }
+	  
+	  
 
 	&.on {
 		opacity: 1;
