@@ -138,7 +138,7 @@
 	  
 		.imgBox {
 		  width: 45%;
-		  height: 60vh;
+		  height: auto;
 		  background: #000;
 		  border-left: 5px solid #000;
 		  border-bottom: 1px solid #000;
@@ -152,7 +152,7 @@
 	  
 		.txtBox {
 		  width: 55%;
-		  height: 60vh;
+		  height: auto;
 		  border-bottom: 1px solid #000;
 		  border-top: 5px solid #000;
 		  display: flex;
@@ -162,7 +162,7 @@
 	  
 		  button {
 			width: 10%;
-			height: 3vh;
+			height: auto;
 			border: none;
 			background: none;
 			width: 20%;
@@ -218,6 +218,7 @@
 
 			li {
 				width: 30%;
+				height: auto;
 				cursor: pointer;
 				align-items: center;
 				font: 1rem/40px 'arial';

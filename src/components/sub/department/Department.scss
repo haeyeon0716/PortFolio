@@ -50,7 +50,7 @@
 
 		.imgBox{
 			width: 45%;
-			height: 40vh;
+			height: auto;
 			background: #000;
 			margin-top: 50px;	
 			
@@ -63,7 +63,7 @@
 
 		#etc{
 			width: 45%;
-			height: 450px;
+			height: auto;
 			padding-left: 50px;
 			border-left: 1px solid #5e5e5e;
 		}
@@ -102,7 +102,6 @@
 				width: 15%;
 				padding: 10px;
 				margin-bottom: 50px;
-				
 
 				.pic {
 					width: 100%;
@@ -142,6 +141,24 @@
 				width: 100%;
 			}
 		}
+
+		.upper{
+			display: flex;
+			flex-wrap: wrap;
+
+			.imgBox{
+				width: 100%;
+				
+				img{
+					width: 100%;
+				}
+			}
+
+			#etc{
+				width: 100%;
+			}
+		}
+
 		#historyBox {
 			.con {
 				ul {

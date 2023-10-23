@@ -5,7 +5,7 @@
     justify-content: space-between;
     .content {
       width: 70%;
-      height: 40vh;
+      height: auto;
       border-top: 3px solid #000;
       padding: 10px;
     }
@@ -28,7 +28,7 @@
 
   .signBox {
     width: 100%;
-    height: 30vh;
+    height: auto;
     background: #000;
     margin-top: 100px;
     display: flex;
@@ -57,7 +57,7 @@
       position: absolute; /* h2를 절대 위치로 설정 */
       text-align: center;
       left: 50%;
-      top: 70%;
+      top: 50%;
       transform: translate(-50%, -50%); /* h2를 수평 및 수직으로 정확하게 가운데 정렬 */
       z-index: 1; /* h2를 이미지 위로 겹치게 함 */
     }
@@ -136,7 +136,7 @@
     
       .txtBox {
         width: 80%;
-        height: 30vh;
+        height: auto;
         padding: 8px 10px;
         text-align: center;
         border-right: 1px solid #000;
@@ -186,6 +186,11 @@
         }
       }
     }
+    .side{
+      width: 100%;
+      flex-wrap: wrap;
+
+    }
   }
 }
 
@@ -193,6 +198,7 @@
 .mobile {
   .Members {
     table {
+      width: 100%;
       th {
         display: none;
         &:last-child {

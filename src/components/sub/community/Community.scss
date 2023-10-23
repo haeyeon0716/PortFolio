@@ -54,7 +54,7 @@
 	
 		.imgBox {
 			width: 35%;
-			height: 30vh;
+			height: auto;
 			background: #000;
 			margin-top: 50px;
 			text-align: center;
@@ -78,6 +78,10 @@
 		  
 
 	}
+
+	hr{
+		margin-top: 30px;
+	  }
 
 	.contextBox{
 		width: 100%;
@@ -156,6 +160,38 @@
 						color: #fff;
 					}
 				}
+			}
+		}
+	}
+}
+
+.tablet,
+.mobile{
+
+	.Community{
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+	
+			.inputBox {
+				width: 100%;
+			}
+		
+			.imgBox {
+				width: 100%;
+			  }
+		}
+		.contextBox{
+			h1{
+				font-size: 2rem;
+			}
+		}
+
+		.showBox{
+			width: 100%;
+
+			article{
+				width: 100%;
 			}
 		}
 	}

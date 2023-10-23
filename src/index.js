@@ -4,29 +4,19 @@
 	3. react 프로젝트에서 public, src 폴더를 통해서 어떤식으로 빌드되면서 화면 렌더링	 
 */
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
-import modalReducer from './redux/modalSlice';
-import menuReducer from './redux/menuSlice';
-
-const store = configureStore({
-	reducer: {
-		modal: modalReducer,
-		menu: menuReducer,
-	},
-});
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { GlobalProvider } from "./hooks/useGlobalContext";
 
 ReactDOM.render(
-	<BrowserRouter>
-		<Provider store={store}>
-			<App />
-		</Provider>
-	</BrowserRouter>,
-	document.getElementById('root')
+  <BrowserRouter>
+    <GlobalProvider>
+      <App />
+    </GlobalProvider>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 
 /*

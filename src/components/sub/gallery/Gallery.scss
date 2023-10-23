@@ -62,7 +62,7 @@
 
 	.imgBox{
 		width: 45%;
-		height: 40vh;
+		height: auto;
 		margin-top: 50px;
 		padding-left: 30px;
 		
@@ -72,6 +72,7 @@
 		width: 45%;
 		height: 250px;
 		padding-left: 30px;
+		padding: 10px;
 		margin-top: 50px;
 	}
 
@@ -168,7 +169,7 @@ h2{
 				}
 				.Txt{
 					width: 35%;
-					height: 13vh;
+					height: auto;
 					float: right;
 
 					h2{
@@ -198,16 +199,8 @@ h2{
 	}
 
 
-.laptop {
-	.Gallery {
-		.picFrame {
-			article {
-				width: 32%;
-			}
-		}
-	}
-}
-.tablet {
+.tablet,
+.mobile {
 	.Gallery {
 		.picFrame {
 			article {
@@ -215,13 +208,24 @@ h2{
 			}
 		}
 	}
-}
-.mobile {
-	.Gallery {
-		.picFrame {
-			article {
-				width: 100%;
-			}
+	.upper{
+		display: flex;
+		flex-wrap: wrap;
+	
+		.imgBox{
+			width: 100%;
+		}
+	
+		#etc{
+			width: 100%;
+		}
+	}
+	.mainbox {
+		display: flex;
+		flex-wrap: wrap;
+
+		article {
+		  width: 100%;
 		}
 	}
 }

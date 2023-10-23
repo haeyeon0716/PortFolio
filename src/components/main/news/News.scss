@@ -24,8 +24,8 @@
 		justify-content: space-between;
 
 		article {
-			width: 20%;
-			height: 300px;
+			width: 25%;
+			height: auto;
 			padding: 20px;
 			border-top: 4px solid #000;
 			border-left: 1px solid #000;
@@ -48,7 +48,7 @@
 
 		.imgBox{
 			width: 50%;
-			height: 30vh;
+			height: auto;
 			background: #000;
 			margin-top: 100px;
 			transition: 0.6s;
@@ -65,7 +65,7 @@
 		}
 		.txt{
 			width: 45%;
-			height: 30vh;
+			height: auto;
 			border-bottom: 4px solid #000;
 			border-left: 1px solid #000;
 			margin-top: 100px;

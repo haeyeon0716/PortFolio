@@ -38,7 +38,7 @@
 		}
 		.txt{
 			width: 35%;
-			height: 50vh;
+			height: auto;
 			border-top: 4px solid #000;
 			border-left: 1px solid #000;
 			margin-bottom: 50px;
@@ -99,6 +99,24 @@
 			}
 			&:nth-of-type(5) {
 				grid-area: 2/2 / span 2 / span 2;
+			}
+		}
+	}
+}
+
+.tablet,
+.mobile {
+	.info{
+		margin-top: 150px;
+		.content{
+			.infoBox{
+				width: 100%;
+				flex-wrap: wrap;
+	
+			}
+			.txt{
+				width: 100%;
+				flex-wrap: wrap;
 			}
 		}
 	}
