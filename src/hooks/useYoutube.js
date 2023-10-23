@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 const fetchYoutube = async () => {
 	const api_key = process.env.REACT_APP_YOUTUBE_API;
 	const baseURL = 'https://www.googleapis.com/youtube/v3/playlistItems';
-	const pid = 'PLHtvRFLN5v-W5bQjvyH8QTdQQhgflJ3nu';
+	const pid = 'PL1BYYyCLf7NdanCUjHVau1ee2D36jh_qM';
 	const num = 10;
 	const resultURL = `${baseURL}?key=${api_key}&part=snippet&playlistId=${pid}&maxResults=${num}`;
 
