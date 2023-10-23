@@ -176,6 +176,19 @@
 .tablet,
 .mobile {
   .Members {
+    .Box{
+      display: flex;
+      flex-wrap: wrap;
+      .content {
+        width: 100%;
+      }
+    
+      .imgBox{
+        width: 100%;  
+        margin-top: 20px;
+      }
+    }
+  
     table {
       td {
         input[type="text"],

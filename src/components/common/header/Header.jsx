@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import './Header.scss';
 import { FaBars } from 'react-icons/fa';
-import { useGlobalData } from '../../../hooks/useGlobalContext';
+import { useGlobalData } from '../../../hooks/useGlobalContext.js';
 
 export default function Header({ isMain }) {
 	const { MenuOpen, setMenuOpen, setTheme, Theme } = useGlobalData();

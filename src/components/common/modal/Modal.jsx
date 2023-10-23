@@ -1,7 +1,7 @@
 import './Modal.scss';
 import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useGlobalData } from '../../../hooks/useGlobalContext';
+import { useGlobalData } from '../../../hooks/useGlobalContext.js';
 
 const Modal = ({ children }) => {
 	const { ModalOpen, setModalOpen } = useGlobalData();

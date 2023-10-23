@@ -1,7 +1,7 @@
 import './Menu.scss';
 import { Link, NavLink } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useGlobalData } from '../../../hooks/useGlobalContext';
+import { useGlobalData } from '../../../hooks/useGlobalContext.js';
 
 function Menu() {
 	const { MenuOpen, setMenuOpen } = useGlobalData();

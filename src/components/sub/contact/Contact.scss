@@ -250,5 +250,18 @@
 				border-left: none;
 			}
 		}
+
+		.imgtxt{
+			display: flex;
+			flex-wrap: wrap;
+
+			.imgBox{
+				width: 100%;
+			}
+
+			.txtBox{
+				width: 100%;
+			}
+		}
 	}
 }
